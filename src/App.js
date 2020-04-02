@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import Fade from 'react-reveal/Fade';
+
+import profilePic from './img/profilePic.jpeg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Fade left big cascade>
+        <h1>My first github page</h1>
+        <h3>Authur: Bao Nguyen Gia</h3>
+        <img src={profilePic} alt={'Profile picture'} className='profile-pic' />
+      </Fade>
     </div>
   );
 }
